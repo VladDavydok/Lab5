@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма і Таблиця</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <form id="form">
+            <h2>Форма для заповнення</h2>
+
+            1. ПІБ:<br>
+            <input type="text" name="name" id="name" value=""><br><br>
+
+            2. Група:<br>
+            <input type="text" name="group" id="group" value=""><br><br>
+
+            3. Варіант:<br>
+            <input type="text" name="variant" id="variant" value=""><br><br>
+
+            4. Факультет:<br>
+            <input type="text" name="faculty" id="faculty" value=""><br><br>
+
+            5. Дата народження (дд.мм.рррр):<br>
+            <input type="text" name="dob" id="dob" value=""><br><br>
+
+            <input type="submit" value="Надіслати" onClick="return validateForm(this.form)">
+        </form>
+
+        <div id="formData">
+            <h3>Введені дані:</h3>
+            <p id="displayData"></p>
+        </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div>
+        <table id="myTable">
+        </table>
+    </div>
+</div>
+<input type="color" id="colorPicker" style="display:none;">
+<script src="script.js"></script>
+
+</body>
+</html>
